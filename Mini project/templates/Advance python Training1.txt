@@ -1,0 +1,182 @@
+DAY-1
+
+Types of varieties for problems
+	. Puzzle based
+	. Pattern based
+	. Data structure based
+Land Marks
+	. Looping(backbone) and testing
+	. Functions and recurssion
+Implementation of loops:-
+	.Grace function(numbers and values)
+	.
+---------------------------
+Snippets
+	1)for i in range(7):
+	     print(i)
+(prints the output in a single line from top to bottom)
+	o/p: 0
+	     1
+	     2
+	     3
+	     4
+	     5
+	     6
+===========================
+	2)for i in range(7):
+	     print(i,end="")
+	     (prints the output in a single line from left to right)
+	o/p: 0 1 2 3 4 5 6
+===========================
+	3)for i in 10,20,40:
+	    print("hi")
+	o/p: hi hi hi
+===========================
+	4)for i in 10,20,40:
+	    print("i")
+===========================
+	5)x=10
+	  for i in range (20,10,-2)
+	     x=x+2
+	     print("HI")
+	  for i in "HI":
+	     print(x,end=" ")
+	  o/p: HI
+	       HI
+	       HI
+	       HI
+ 	       HI
+	       20 20
+==========================
+	6)z=3
+ 	  for i in "island":
+	     z=z+1
+	 S = z
+	 for i in range(z):
+	    S=S+i
+	 print(S)
+	 o/p:45
+==========================
+	7)n=5				| for i in range (10):
+	 for i in range(n):	        |    print("*",end="")
+ 	   for j in range(n):		| for
+       	      print("*",end=" ")	|
+   	   print()			|
+	 o/p:* * * * * 			|
+	     * * * * * 			|
+	     * * * * * 			|
+	     * * * * * 			|
+ 	     * * * * * 			|
+=========================
+	8)a = int(input("Enter a = "))
+	  if a % 2 == 0:
+    	    n = 10
+	  else:
+    	    n = a
+	  for i in range(1, n + 1):
+    	    print(a * i)
+=========================
+	9)a=inpout("Enter any sentence:")
+	  c=0
+	  for i in a:
+	    if i=" ":
+		c=c+1
+	  print("The total words:",c)
+=========================
+The massive different while and for
+.if we know the no.of iterations we prefer "for"
+.if we dont have any clarity of no.of iterations we prefer "while"
+=========================
+	10)import random
+	   a=random.randiant(1,10)
+	   print(a)
+----------------------------------------------------------------------------------------------------------
+DAY-2
+
+A poultry farm has group of hens and cows need to find num of cows and hens separately, if total legs and total heads together give:
+testcase 1: legs:16
+	    heads:6
+	    cows=2
+	    hens=4
+testcase 2: legs:7
+	    heads:3
+	    output: No Solution
+code: heads = int(input("Enter number of heads: "))
+      legs = int(input("Enter number of legs: "))
+      for cows in range(heads + 1):
+          hens = heads - cows
+          if (4 * cows + 2 * hens) == legs:
+             print("cows =", cows)
+             print("hens =", hens)
+             break
+      else:
+           print("No Solution")
+==========================
+10) import calendar                  |
+    a=int(input("Enter any year:"))  |
+    b=int(input("Enter any month:")) |
+    res=calendar.calendar(a,b)       |
+    print(res)                       |
+==============
+Types of for loops:
+	.dependent loop
+	.independent loop
+====================
+11)a=2
+   for i in range(2,5):
+       a=a+2
+       for j in range(4):
+            a=a+3
+       print(a)
+===
+12)a=10
+   for i in range(4):
+	for j in range(i+1):
+	   a=a+i
+	print("ACE")
+   print(a)
+=============
+******
+******
+******
+******
+------------------------------------------------------------------------------------------------------------------
+DAY-3
+
+13)class Solution:
+    def isPerfectSquare(self, num: int) -> bool:
+        a=num**0.5
+        if a%1==0:
+            return True
+        else:
+            return False
+==============================================
+string:
+    ""
+    coll of char
+    immutable
+    indexing
+    traversing
+    many indices
+return type of Boolean are:
+isdigit()
+isalpha()
+isalphanum()
+return type of string are:
+upper()
+lower()
+join()
+return type of integer:
+count()
+find()
+return types of list:
+sort()
+---------------------------------------------------------------------------------------------
+Day-4
+
+List:
+	mutable
+	index
+        traversing
+	duplicates
+        ordered
